@@ -1,0 +1,8 @@
+#!/usr/bin/env node
+const DatanoteApiServer = require('@datagica/datanote-api-server')
+const server = new DatanoteApiServer({})
+server.start(() => {
+  server.log('Datanote API is now running')
+}).catch((err) => {
+  console.error('Datanote API couldn\'t be started: '+err)
+})
