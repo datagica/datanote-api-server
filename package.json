@@ -15,8 +15,8 @@
   "author": "Julian Bilcke <julian.bilcke@datagica.com>",
   "license": "GPL-3.0",
   "dependencies": {
-    "micro": "^9.3.3",
-    "@datagica/datanote-service-file2doc": "^0.0.0"
+    "@datagica/datanote-api-job-balancer": "^0.0.0",
+    "@datagica/datanote-api-job-runner": "^0.0.0"
   },
   "devDependencies": {}
 }
