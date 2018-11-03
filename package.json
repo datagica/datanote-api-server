@@ -3,20 +3,20 @@
   "version": "0.0.0",
   "description": "Datanote API server",
   "main": "./lib/index.js",
-  "bin": "./bin/datanote-api-server",
-  "files": [
-    "bin",
-    "lib",
-    "README.md"
-  ],
+  "bin": {
+    "datanote-api-server": "bin/datanote-api-server"
+  },
   "scripts": {
+    "start": "datanote-api-server",
     "test": "node_modules/.bin/mocha --harmony --bail --require chai tests/*.js"
   },
   "author": "Julian Bilcke <julian.bilcke@datagica.com>",
   "license": "GPL-3.0",
   "dependencies": {
-    "@datagica/datanote-api-job-balancer": "^0.0.0",
-    "@datagica/datanote-api-job-runner": "^0.0.0"
+    "@datagica/datanote-api-job-balancer": "^0.0.1",
+    "@datagica/datanote-api-job-runner": "^0.0.1",
+    "@datagica/run-module": "^0.0.0",
+    "commander": "^2.19.0"
   },
   "devDependencies": {}
 }
