@@ -7,14 +7,14 @@
     "datanote-api-server": "bin/datanote-api-server"
   },
   "scripts": {
-    "start": "datanote-api-server",
+    "start": "node lib/cli.js",
     "test": "node_modules/.bin/mocha --harmony --bail --require chai tests/*.js"
   },
   "author": "Julian Bilcke <julian.bilcke@datagica.com>",
   "license": "GPL-3.0",
   "dependencies": {
-    "@datagica/datanote-api-job-balancer": "^0.0.1",
-    "@datagica/datanote-api-job-runner": "^0.0.1",
+    "@datagica/datanote-api-job-balancer": "^0.0.3",
+    "@datagica/datanote-api-job-runner": "^0.0.2",
     "@datagica/run-module": "^0.0.0",
     "commander": "^2.19.0"
   },
